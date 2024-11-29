@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(/assets/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+#game_container {
+  position: relative;
+  width: 400px;
+  height: 660px;
+  margin: 15px auto;
+  background-color: #1b1b1b;
+  border: 5px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#game_topic h1 {
+  position: fixed;
+  top: 250px;
+  margin-left: 550px;
+  font-size: 3.5rem;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.382);
+}
+
+#race_track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#player_car {
+  position: absolute;
+  bottom: 10px;
+  left: 175px;
+  width: 50px;
+  height: 100px;
+  background-color: #462cc8ab;
+  background-image: url(/assets/glibersat_Nioubiteul.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.obstacle {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background-color: #ff0404cc;
+  background-image: url(/assets/car_topview.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transform: rotate(-180deg);
+}
+
+#score_disply {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
+
+#menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#menu button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times;
+  color: #fff;
+  background-color: #8aa319;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#menu button:hover {
+  background-color: #00b345;
+}
+
+.hidden {
+  display: none;
+}
